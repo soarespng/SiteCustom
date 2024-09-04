@@ -38,7 +38,6 @@ const Navbar = () => {
         fetchData();
     }, []);
 
-    console.log(colors);
     const toggleDrawer = (open) => (event) => {
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
             return;
@@ -81,7 +80,7 @@ const Navbar = () => {
                             color="inherit"
                             aria-label="menu"
                             onClick={toggleDrawer(true)}
-                            sx={{ display: { xs: 'block', md: 'none' } }} 
+                            sx={{ display: { xs: 'block', md: 'none' } }}
                         >
                             <MenuIcon />
                         </IconButton>
